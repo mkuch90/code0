@@ -1,0 +1,13 @@
+{
+    "max-concurrent-indexers" : 2,
+    "dbpath" : "data",
+    "repos" : {
+	    "code0repo" : {
+                 "url" : "https://github.com/mkuch90/code0.git"
+	    },
+            "local" :{
+                 "url" : "file:///home/mkuch90/code0/"
+	    }
+    }
+}
+
