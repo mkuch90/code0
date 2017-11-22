@@ -1,0 +1,22 @@
+new_git_repository(
+    name = "googletest",
+    build_file = "gmock.BUILD",
+    remote = "https://github.com/google/googletest",
+    tag = "release-1.8.0",
+)
+
+git_repository(
+    name   = "com_github_gflags_gflags",
+    commit = "23348465a02c9fdbdecce01cee24e62b9f1f5bad",
+    remote = "https://github.com/gflags/gflags.git",
+)
+
+bind(
+    name = "gflags",
+    actual = "@com_github_gflags_gflags//:gflags",
+)
+
+bind(
+    name = "gflags_nothreads",
+    actual = "@com_github_gflags_gflags//:gflags_nothreads",
+)
